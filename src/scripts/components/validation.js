@@ -1,6 +1,3 @@
-const namePattern = /^[A-Za-zА-Яа-яЁё\s-]+$/;
-const customNameError = 'Разрешены только латинские, кириллические буквы, дефис и пробел.';
-
 const showInputError = (formElement, inputElement, errorMessage, settings) => {
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
 
@@ -17,14 +14,9 @@ const hideInputError = (formElement, inputElement, settings) => {
   errorElement.classList.remove(settings.errorClass);
 };
 
-const isNameInput = (inputElement) => {
-  return inputElement.classList.contains('popup__input_type_name') ||
-    inputElement.classList.contains('popup__input_type_card-name');
-};
-
 const checkInputValidity = (formElement, inputElement, settings) => {
-  if (isNameInput(inputElement) && inputElement.value && !namePattern.test(inputElement.value)) {
-    inputElement.setCustomValidity(customNameError);
+  if (inputElement.validity.patternMismatch) {
+    inputElement.setCustomValidity(inputElement.dataset.errorMessage);
   } else {
     inputElement.setCustomValidity('');
   }

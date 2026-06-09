@@ -23,8 +23,4 @@ npm run deploy
 
 ## ссылка
 
-После публикации добавьте сюда ссылку на GitHub Pages:
-
-```text
-https://username.github.io/mesto-production/
-```
+https://egor2531253176247.github.io/mesto-ad/

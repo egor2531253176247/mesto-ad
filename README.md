@@ -1,15 +1,15 @@
-# Mesto
+# Mestо
 
 Проектная работа Mesto: работа с сервером.
 
-## Запуск проекта
+## Зaпуск
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Сборка
+## cборка
 
 ```bash
 npm run build
@@ -21,7 +21,7 @@ npm run build
 npm run deploy
 ```
 
-## Ссылка на проект
+## ссылка
 
 После публикации добавьте сюда ссылку на GitHub Pages:
 

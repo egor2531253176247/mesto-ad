@@ -2,7 +2,7 @@
   display: grid;
   grid-template-areas: "title button"
   "description description";
-  grid-template-columns: minmax(auto, 295px) auto;
+  grid-template-columns: fit-content(295px) auto;
   /*Можно не гридить*/
   grid-gap: 9px 17px;
   /*Подгон под ПЭПЭ, без него - 16px*/
@@ -10,14 +10,14 @@
 
 @media screen and (max-width: 740px) {
   .profile__info {
-    grid-template-columns: minmax(auto, 228px) auto;
+    grid-template-columns: fit-content(228px) auto;
     grid-gap: 9px 5px;
   }
 }
 
 @media screen and (max-width: 568px) {
   .profile__info {
-    grid-template-columns: minmax(auto, 195px) auto;
+    grid-template-columns: fit-content(195px) auto;
   }
 }
 
